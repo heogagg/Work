@@ -90,14 +90,14 @@ ul{
     filter: drop-shadow(2px 2px 3px black);
 }
 
-@media screen and (width < 850px){
+@media (max-width: 768px){
 
     ul.menu li a {
         display: block;
         color: #333;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 11px;
+        font-size: 9px;
         transition: 1s;
     }
 
