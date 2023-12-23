@@ -73,7 +73,7 @@ ul{
     margin-top: 10px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) and (max-height:390px){
     .form-div{
         display: flex;
         background-color: #AC3B61;
