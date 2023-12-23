@@ -54,15 +54,15 @@ ul{
     filter: drop-shadow(1px 1px 2px black);
 }
 
-.moto-info{
+.info-block{
     background-color: #AC3B61;
     margin-top: 20px;
     width: 85%;
     display: flex;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
-.moto-info b{
+.info-block b{
     font-size: 18px;
     margin: auto 10px auto 12px;
     padding-top: 10px;
@@ -73,26 +73,73 @@ ul{
     filter: drop-shadow(1px 1px 2px black);
 }
 
-.immg{
+.kotolog{
     display: flex;
     width: 85%;
-    background-color: #AC3B61; 
-    border-radius: 20px 20px 0px 0px;
     margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 50px 0;
 }
 
-.immg img{
-    width: 85%;
-    margin: auto auto auto auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 30px;
-    filter: drop-shadow(2px 2px 3px black);
+.immg{
+    width: 300px;
+    height: 250px;
+}
+
+.text-info{
+    list-style-type: none;
+    padding-left: 0;
+}
+.text-info-li{
+    display: flex;
+    line-height: 2;
+    
+}
+
+.text-info-li b{
+    font-size: 12px;
+}
+
+.buy-button{
+    background-color: #AC3B61;
+    height: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.buy-button a{
+    color: #e0e0e0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 33%;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 1s;
+}
+
+td{
+    padding: 10px 0;
+}
+
+.buy-button a:hover{
+    font-size: 21px;
 }
 
 @media screen and (width < 850px){
 
-    ul.menu li a {
+    .kotolog tr {
+        display: block;
+      }
+      
+      .kotolog td {
+        display: block;
+        width: 100%;
+      }
+
+      ul.menu li a {
         display: block;
         color: #333;
         padding: 14px 16px;
@@ -109,4 +156,5 @@ ul{
         color: #f0e5e9;
         filter: drop-shadow(1px 1px 2px black);
     }
+
 }

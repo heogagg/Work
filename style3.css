@@ -54,44 +54,43 @@ ul{
     filter: drop-shadow(1px 1px 2px black);
 }
 
-.moto-info{
+.form-div{
+    display: flex;
     background-color: #AC3B61;
-    margin-top: 20px;
-    width: 85%;
-    display: flex;
-    border-radius: 15px;
+    width: 35%;
+    margin-top: 20px; 
+    border-radius: 20px;
 }
 
-.moto-info b{
-    font-size: 18px;
-    margin: auto 10px auto 12px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #e0e0e0;
-    filter: drop-shadow(1px 1px 2px black);
-}
+.form{
+   display: flex;
+   flex-direction: column;
+   margin: 20px auto 40px 5px;
 
-.immg{
-    display: flex;
-    width: 85%;
-    background-color: #AC3B61; 
-    border-radius: 20px 20px 0px 0px;
-    margin-top: 20px;
 }
-
-.immg img{
-    width: 85%;
-    margin: auto auto auto auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 30px;
-    filter: drop-shadow(2px 2px 3px black);
+.button-buy{
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 @media screen and (width < 850px){
+    .form-div{
+        display: flex;
+        background-color: #AC3B61;
+        width: 55%;
+        margin-top: 20px; 
+        border-radius: 20px;
+    }
 
+    ul.menu li a {
+        display: block;
+        color: #333;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 10px;
+        transition: 1s;
+    }
+    
     ul.menu li a {
         display: block;
         color: #333;
@@ -109,4 +108,6 @@ ul{
         color: #f0e5e9;
         filter: drop-shadow(1px 1px 2px black);
     }
+}
+    
 }
